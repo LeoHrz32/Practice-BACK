@@ -27,6 +27,12 @@ const courseSchema = new mongoose.Schema({
         required: true,
         enum: ['Disponible', 'No disponible'],
         default: 'No disponible'
+    },
+    assigned: {
+        type: Boolean,
+        required: true,
+        default: false 
+    
     }
 }, { timestamps: true });
 

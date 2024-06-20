@@ -16,7 +16,8 @@ exports.createCourse = async (req, res) => {
         name: req.body.name,
         description: req.body.description,
         time: req.body.time,
-        state: req.body.state
+        state: req.body.state,
+        assigned: req.body.assigned
     });
 
     try {
